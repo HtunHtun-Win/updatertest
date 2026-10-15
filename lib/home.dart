@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:forui/forui.dart';
 import 'package:forui_27/authservice.dart';
 import 'package:forui_27/login.dart';
+import 'package:forui_27/updatescreen.dart';
 import 'package:trina_grid/trina_grid.dart';
 
 class Home extends StatefulWidget {
@@ -165,7 +166,10 @@ class _HomeState extends State<Home> {
       final fetchEnd = (fetchStart + pageSize - 1).clamp(0, totalRecords - 1);
 
       if (fetchStart < totalRecords) {
-        final resp = await authService.getAllDataWithRange(fetchStart, fetchEnd);
+        final resp = await authService.getAllDataWithRange(
+          fetchStart,
+          fetchEnd,
+        );
         final fetchRows = _buildRowsFromData(resp);
         rows.addAll(fetchRows);
         cacheDatas = [...cacheDatas, ...resp];
@@ -228,6 +232,14 @@ class _HomeState extends State<Home> {
                       getAllData();
                     },
                     child: Text("Fake Data"),
+                  ),
+                  FButton(
+                    onPress: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => const Updatescreen()),
+                      );
+                    },
+                    child: Text("ChechUpdate"),
                   ),
                   FButton(
                     onPress: _logout,

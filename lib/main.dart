@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter_desktop_updater/flutter_desktop_updater.dart';
 import 'package:forui/forui.dart';
 // import 'package:material_ui/material_ui.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  UpdateConfig().configure(
+    updateJsonUrl: 'https://github.com/HtunHtun-Win/updatertest/blob/main/update.json',
+  );
 
   // Initialize Supabase before the app starts.
   await Supabase.initialize(

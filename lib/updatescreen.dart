@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_desktop_updater/flutter_desktop_updater.dart';
-import 'package:forui/forui.dart';
 
 class Updatescreen extends StatefulWidget {
   const new({super.key});
@@ -19,8 +18,6 @@ class _UpdatescreenState extends State<Updatescreen> {
 
   @override
   Widget build(BuildContext context) {
-    return FScaffold(
-      child: Column(children: [Material(child: const UpdateBanner())]),
-    );
+    return Scaffold(body: Column(children: [const UpdateBanner()]));
   }
 }

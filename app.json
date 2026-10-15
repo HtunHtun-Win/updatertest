@@ -16,7 +16,7 @@
     "linux": {
         "version": "1.0.2",
         "build_number": "3",
-        "download_url": "https://raw.githubusercontent.com/HtunHtun-Win/updatertest/270e279bc51a75868e659a95d7ce68c1e7606118/v2.zip",
+        "download_url": "https://raw.githubusercontent.com/HtunHtun-Win/updatertest/270e279bc51a75868e659a95d7ce68c1e7606118/v3.zip",
         "file_size": 13000000,
         "release_notes": "Bug fixes and improvements"
     }

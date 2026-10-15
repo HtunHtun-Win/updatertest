@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_desktop_updater/flutter_desktop_updater.dart';
 import 'package:forui/forui.dart';
 import 'package:forui_27/authservice.dart';
 import 'package:forui_27/login.dart';
@@ -65,6 +66,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    UpdateManager().checkForUpdate();
     getAllData();
   }
 
@@ -218,6 +220,7 @@ class _HomeState extends State<Home> {
               child: Column(
                 spacing: 16,
                 children: [
+                  const UpdateBanner(),
                   FCard(
                     child: Padding(
                       padding: const EdgeInsets.all(16),
@@ -233,14 +236,14 @@ class _HomeState extends State<Home> {
                     },
                     child: Text("Fake Data"),
                   ),
-                  FButton(
-                    onPress: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const Updatescreen()),
-                      );
-                    },
-                    child: Text("ChechUpdate"),
-                  ),
+                  // FButton(
+                  //   onPress: () {
+                  //     Navigator.of(context).push(
+                  //       MaterialPageRoute(builder: (_) => const Updatescreen()),
+                  //     );
+                  //   },
+                  //   child: Text("ChechUpdate"),
+                  // ),
                   FButton(
                     onPress: _logout,
                     child: Text(isSigningOut ? 'Logging out...' : 'Logout'),
@@ -259,7 +262,7 @@ class _HomeState extends State<Home> {
                   Row(
                     children: [
                       const Text(
-                        'User Data v2',
+                        'User Data v3',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

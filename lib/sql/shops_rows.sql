@@ -1,0 +1,1 @@
+INSERT INTO public.shops (id, name, phone, address, created_at) VALUES (1, 'Digital', '23423432', 'Yangon', '2026-10-09 02:40:56.815055+00'), (2, 'Fusion', '203423098', 'MDY', '2026-10-09 02:41:17.21882+00');

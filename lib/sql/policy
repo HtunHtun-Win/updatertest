@@ -1,0 +1,13 @@
+alter policy "Enable action for users based on user_id"
+on "public"."datas"
+to public
+using (
+(( SELECT auth.uid() AS uid) = user_id)
+);
+
+alter policy "Enable insert for authenticated users only"
+on "public"."datas"
+to authenticated
+with check (
+true
+);

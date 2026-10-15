@@ -14,10 +14,10 @@
         "release_notes": "Bug fixes and improvements"
     },
     "linux": {
-        "version": "1.0.1",
-        "build_number": "2",
-        "download_url": "https://your-server.com/MyApp-linux-1.0.1.zip",
-        "file_size": 50000000,
+        "version": "1.0.2",
+        "build_number": "3",
+        "download_url": "https://raw.githubusercontent.com/HtunHtun-Win/updatertest/270e279bc51a75868e659a95d7ce68c1e7606118/v2.zip",
+        "file_size": 13000000,
         "release_notes": "Bug fixes and improvements"
     }
 }

@@ -12,7 +12,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   UpdateConfig().configure(
-    updateJsonUrl: 'https://github.com/HtunHtun-Win/updatertest/blob/main/update.json',
+    updateJsonUrl: 'https://raw.githubusercontent.com/HtunHtun-Win/updatertest/refs/heads/main/app.json',
   );
 
   // Initialize Supabase before the app starts.

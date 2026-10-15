@@ -1,0 +1,23 @@
+{
+    "macos": {
+        "version": "1.0.1",
+        "build_number": "2",
+        "download_url": "https://your-server.com/MyApp-macos-1.0.1.zip",
+        "file_size": 52428800,
+        "release_notes": "Bug fixes and improvements"
+    },
+    "windows": {
+        "version": "1.0.1",
+        "build_number": "2",
+        "download_url": "https://your-server.com/MyApp-windows-1.0.1.zip",
+        "file_size": 48000000,
+        "release_notes": "Bug fixes and improvements"
+    },
+    "linux": {
+        "version": "1.0.1",
+        "build_number": "2",
+        "download_url": "https://your-server.com/MyApp-linux-1.0.1.zip",
+        "file_size": 50000000,
+        "release_notes": "Bug fixes and improvements"
+    }
+}

@@ -220,7 +220,7 @@ class _HomeState extends State<Home> {
               child: Column(
                 spacing: 16,
                 children: [
-                  const UpdateBanner(),
+                  // const UpdateBanner(),
                   FCard(
                     child: Padding(
                       padding: const EdgeInsets.all(16),
@@ -236,14 +236,14 @@ class _HomeState extends State<Home> {
                     },
                     child: Text("Fake Data"),
                   ),
-                  // FButton(
-                  //   onPress: () {
-                  //     Navigator.of(context).push(
-                  //       MaterialPageRoute(builder: (_) => const Updatescreen()),
-                  //     );
-                  //   },
-                  //   child: Text("ChechUpdate"),
-                  // ),
+                  FButton(
+                    onPress: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => const Updatescreen()),
+                      );
+                    },
+                    child: Text("ChechUpdate"),
+                  ),
                   FButton(
                     onPress: _logout,
                     child: Text(isSigningOut ? 'Logging out...' : 'Logout'),
@@ -262,7 +262,7 @@ class _HomeState extends State<Home> {
                   Row(
                     children: [
                       const Text(
-                        'User Data v3',
+                        'User Data v2',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

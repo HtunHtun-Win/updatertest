@@ -16,7 +16,7 @@
     "linux": {
         "version": "1.0.2",
         "build_number": "2",
-        "download_url": "https://github.com/HtunHtun-Win/updatertest/releases/download/valid/v2.zip",
+        "download_url": "https://github.com/HtunHtun-Win/updatertest/releases/download/valid/MyApp-x86_64.AppImage.zip",
         "file_size": 13000000,
         "release_notes": "Bug fixes and improvements"
     }

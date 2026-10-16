@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=My Flutter App
+Exec=usr/bin/forui_27
+Icon=app_icon
+Categories=Utility;
+Terminal=false
